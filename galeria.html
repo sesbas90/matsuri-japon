@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- RESPONSIVE -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+          content="Galería de imágenes de los festivales tradicionales japoneses Matsuri.">
+
+    <title>Galería | Matsuri Japón</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <h1 class="logo"
+        data-key="logo">
+
+        Matsuri Japón
+
+    </h1>
+
+    <!-- BOTONES DE IDIOMA -->
+    <div class="language-switch">
+
+        <button class="lang-btn active"
+                onclick="changeLanguage('es')">
+
+            ES
+
+        </button>
+
+        <button class="lang-btn"
+                onclick="changeLanguage('en')">
+
+            EN
+
+        </button>
+
+    </div>
+
+    <!-- BOTÓN MENÚ RESPONSIVE -->
+    <button class="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+        ☰
+
+    </button>
+
+    <!-- NAVEGACIÓN -->
+    <nav aria-label="Menú principal">
+
+        <ul class="nav">
+
+            <li>
+                <a href="index.html"
+                   data-key="inicio">
+
+                    Inicio
+
+                </a>
+            </li>
+
+            <li>
+                <a href="historia.html"
+                   data-key="historia">
+
+                    Historia
+
+                </a>
+            </li>
+
+            <!-- MENÚ DESPLEGABLE -->
+            <li class="dropdown">
+
+                <button class="dropdown-btn"
+                        aria-expanded="false"
+                        data-key="tipos">
+
+                    Tipos de Matsuri
+
+                </button>
+
+                <ul class="submenu">
+
+                    <li>
+                        <a href="tipos.html#religiosos"
+                           data-key="religiosos">
+
+                            Religiosos
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tipos.html#estacionales"
+                           data-key="estacionales">
+
+                            Estacionales
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tipos.html#modernos"
+                           data-key="modernos">
+
+                            Modernos
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="galeria.html"
+                   aria-current="page"
+                   data-key="galeria">
+
+                    Galería
+
+                </a>
+            </li>
+
+            <li>
+                <a href="calendario.html"
+                   data-key="calendario">
+
+                    Calendario
+
+                </a>
+            </li>
+
+            <li>
+                <a href="contacto.html"
+                   data-key="contacto">
+
+                    Contacto
+
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- MENSAJE DINÁMICO -->
+<div id="mensaje-bienvenida"
+     class="mensaje"
+     aria-live="polite">
+</div>
+
+<!-- MAIN -->
+<main>
+
+    <!-- HERO -->
+    <section class="hero-galeria slider"
+             role="img"
+             aria-label="Galería de festivales tradicionales japoneses">
+
+        <h2 data-key="galeriaTitulo">
+
+            Galería Matsuri
+
+        </h2>
+
+        <p data-key="galeriaDescripcion">
+
+            Explora imágenes de los festivales tradicionales japoneses
+
+        </p>
+
+        <!-- BOTONES SLIDER -->
+        <button class="prev"
+                aria-label="Imagen anterior">
+
+            ⟨
+
+        </button>
+
+        <button class="next"
+                aria-label="Imagen siguiente">
+
+            ⟩
+
+        </button>
+
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="festivales">
+
+        <h2 data-key="momentosTitulo">
+
+            Momentos destacados de los Matsuri
+
+        </h2>
+
+        <div class="cards">
+
+            <!-- IMAGEN 1 -->
+            <article class="card"
+                     tabindex="0">
+
+                <div class="img img1"
+                     role="img"
+                     aria-label="Festival Gion Matsuri en Kioto">
+                </div>
+
+                <h3 data-key="gionGaleriaTitulo">
+
+                    Gion Matsuri
+
+                </h3>
+
+                <p data-key="gionGaleriaTexto">
+
+                    Uno de los festivales más importantes y antiguos de Japón.
+
+                </p>
+
+            </article>
+
+            <!-- IMAGEN 2 -->
+            <article class="card"
+                     tabindex="0">
+
+                <div class="img img2"
+                     role="img"
+                     aria-label="Decoraciones del festival Tanabata">
+                </div>
+
+                <h3 data-key="tanabataGaleriaTitulo">
+
+                    Tanabata
+
+                </h3>
+
+                <p data-key="tanabataGaleriaTexto">
+
+                    Festival relacionado con las estrellas y los deseos.
+
+                </p>
+
+            </article>
+
+            <!-- IMAGEN 3 -->
+            <article class="card"
+                     tabindex="0">
+
+                <div class="img img3"
+                     role="img"
+                     aria-label="Nebuta Matsuri iluminado">
+                </div>
+
+                <h3 data-key="nebutaGaleriaTitulo">
+
+                    Nebuta Matsuri
+
+                </h3>
+
+                <p data-key="nebutaGaleriaTexto">
+
+                    Carrozas iluminadas y desfiles nocturnos llenos de energía.
+
+                </p>
+
+            </article>
+
+            <!-- IMAGEN 4 -->
+            <article class="card"
+                     tabindex="0">
+
+                <div class="img img1"
+                     role="img"
+                     aria-label="Festival Awa Odori">
+                </div>
+
+                <h3 data-key="awaGaleriaTitulo">
+
+                    Awa Odori
+
+                </h3>
+
+                <p data-key="awaGaleriaTexto">
+
+                    Festival tradicional de danza japonesa.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer"
+        aria-label="Pie de página">
+
+    <div>
+
+        <h3 data-key="footerContacto">
+
+            Contacto
+
+        </h3>
+
+        <p>
+            Email: contacto@matsurijapon.com
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3 data-key="footerEnlaces">
+
+            Enlaces
+
+        </h3>
+
+        <p data-key="privacidad">
+
+            Política de privacidad
+
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3 data-key="siguenos">
+
+            Síguenos
+
+        </h3>
+
+        <p data-key="redes">
+
+            Redes sociales
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="js/script.js"></script>
+<script src="js/language.js"></script>
+
+</body>
+</html>

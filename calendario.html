@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Calendario de Matsuri | Matsuri Japón</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <h1 class="logo"
+        data-key="logo">
+
+        Matsuri Japón
+
+    </h1>
+
+    <!-- BOTONES DE IDIOMA -->
+    <div class="language-switch">
+
+        <button class="lang-btn active"
+                onclick="changeLanguage('es')">
+
+            ES
+
+        </button>
+
+        <button class="lang-btn"
+                onclick="changeLanguage('en')">
+
+            EN
+
+        </button>
+
+    </div>
+
+    <!-- BOTÓN MENÚ MÓVIL -->
+    <button class="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+        ☰
+
+    </button>
+
+    <!-- NAV -->
+    <nav class="navbar"
+         aria-label="Menú principal">
+
+        <ul class="nav">
+
+            <li>
+                <a href="index.html"
+                   data-key="inicio">
+
+                    Inicio
+
+                </a>
+            </li>
+
+            <li>
+                <a href="historia.html"
+                   data-key="historia">
+
+                    Historia
+
+                </a>
+            </li>
+
+            <!-- DROPDOWN -->
+            <li class="dropdown">
+
+                <button class="dropdown-btn"
+                        aria-expanded="false"
+                        data-key="tipos">
+
+                    Tipos de Matsuri
+
+                </button>
+
+                <ul class="submenu">
+
+                    <li>
+                        <a href="tipos.html#religiosos"
+                           data-key="religiosos">
+
+                            Religiosos
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tipos.html#estacionales"
+                           data-key="estacionales">
+
+                            Estacionales
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tipos.html#modernos"
+                           data-key="modernos">
+
+                            Modernos
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="galeria.html"
+                   data-key="galeria">
+
+                    Galería
+
+                </a>
+            </li>
+
+            <li>
+                <a href="calendario.html"
+                   aria-current="page"
+                   data-key="calendario">
+
+                    Calendario
+
+                </a>
+            </li>
+
+            <li>
+                <a href="contacto.html"
+                   data-key="contacto">
+
+                    Contacto
+
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- MENSAJE DINÁMICO -->
+<div id="mensaje-bienvenida"
+     class="mensaje"
+     aria-live="polite">
+</div>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero-galeria slider"
+             aria-label="Calendario anual de festivales japoneses">
+
+        <h2 data-key="calendarioTitulo">
+
+            Calendario de Matsuri
+
+        </h2>
+
+        <p data-key="calendarioDescripcion">
+
+            Conoce los principales festivales tradicionales de Japón
+            a lo largo del año
+
+        </p>
+
+        <!-- BOTONES -->
+        <button class="prev"
+                aria-label="Imagen anterior">
+
+            ⟨
+
+        </button>
+
+        <button class="next"
+                aria-label="Imagen siguiente">
+
+            ⟩
+
+        </button>
+
+    </section>
+
+    <!-- INTRODUCCIÓN -->
+    <section class="info">
+
+        <div class="text">
+
+            <h2 data-key="todoAnoTitulo">
+
+                Festivales durante todo el año
+
+            </h2>
+
+            <p data-key="todoAnoTexto1">
+
+                Japón celebra Matsuri en cada estación,
+                desde festivales de nieve en invierno
+                hasta celebraciones de verano y otoño.
+
+            </p>
+
+            <p data-key="todoAnoTexto2">
+
+                Cada mes ofrece experiencias culturales únicas
+                llenas de tradición, música y gastronomía.
+
+            </p>
+
+        </div>
+
+        <div class="image"
+             role="img"
+             aria-label="Calendario cultural japonés">
+        </div>
+
+    </section>
+
+    <!-- CALENDARIO -->
+    <section class="festivales">
+
+        <h2 data-key="principalesMes">
+
+            Principales Matsuri por mes
+
+        </h2>
+
+        <div class="cards">
+
+            <!-- ENERO -->
+            <article class="card"
+                     tabindex="0">
+
+                <h3 data-key="eneroTitulo">
+
+                    Enero - Sapporo Snow Festival
+
+                </h3>
+
+                <p data-key="eneroTexto">
+
+                    Festival de nieve con esculturas gigantes de hielo.
+
+                </p>
+
+                <button aria-label="Más información sobre Sapporo Snow Festival"
+                        data-key="verMas">
+
+                    Ver más
+
+                </button>
+
+            </article>
+
+            <!-- JULIO -->
+            <article class="card"
+                     tabindex="0">
+
+                <h3 data-key="julioTitulo">
+
+                    Julio - Gion Matsuri
+
+                </h3>
+
+                <p data-key="julioTexto">
+
+                    Festival histórico celebrado en la ciudad de Kioto.
+
+                </p>
+
+                <button aria-label="Más información sobre Gion Matsuri"
+                        data-key="verMas">
+
+                    Ver más
+
+                </button>
+
+            </article>
+
+            <!-- AGOSTO -->
+            <article class="card"
+                     tabindex="0">
+
+                <h3 data-key="agostoTitulo">
+
+                    Agosto - Nebuta Matsuri
+
+                </h3>
+
+                <p data-key="agostoTexto">
+
+                    Festival famoso por sus carrozas iluminadas.
+
+                </p>
+
+                <button aria-label="Más información sobre Nebuta Matsuri"
+                        data-key="verMas">
+
+                    Ver más
+
+                </button>
+
+            </article>
+
+            <!-- TANABATA -->
+            <article class="card"
+                     tabindex="0">
+
+                <h3 data-key="tanabataCalendarioTitulo">
+
+                    Julio - Tanabata
+
+                </h3>
+
+                <p data-key="tanabataCalendarioTexto">
+
+                    Festival de las estrellas y los deseos.
+
+                </p>
+
+                <button aria-label="Más información sobre Tanabata"
+                        data-key="verMas">
+
+                    Ver más
+
+                </button>
+
+            </article>
+
+            <!-- AWA ODORI -->
+            <article class="card"
+                     tabindex="0">
+
+                <h3 data-key="awaCalendarioTitulo">
+
+                    Agosto - Awa Odori
+
+                </h3>
+
+                <p data-key="awaCalendarioTexto">
+
+                    Festival tradicional de danza y música japonesa.
+
+                </p>
+
+                <button aria-label="Más información sobre Awa Odori"
+                        data-key="verMas">
+
+                    Ver más
+
+                </button>
+
+            </article>
+
+            <!-- DICIEMBRE -->
+            <article class="card"
+                     tabindex="0">
+
+                <h3 data-key="diciembreTitulo">
+
+                    Diciembre - Chichibu Yomatsuri
+
+                </h3>
+
+                <p data-key="diciembreTexto">
+
+                    Festival nocturno con carrozas decoradas y luces.
+
+                </p>
+
+                <button aria-label="Más información sobre Chichibu Yomatsuri"
+                        data-key="verMas">
+
+                    Ver más
+
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer"
+        aria-label="Pie de página">
+
+    <div>
+
+        <h4 data-key="footerContacto">
+
+            Contacto
+
+        </h4>
+
+        <p>
+            Email: contacto@matsurijapon.com
+        </p>
+
+    </div>
+
+    <div>
+
+        <h4 data-key="footerEnlaces">
+
+            Enlaces
+
+        </h4>
+
+        <p data-key="privacidad">
+
+            Política de privacidad
+
+        </p>
+
+    </div>
+
+    <div>
+
+        <h4 data-key="siguenos">
+
+            Síguenos
+
+        </h4>
+
+        <p data-key="redes">
+
+            Redes sociales
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="js/script.js"></script>
+<script src="js/language.js"></script>
+
+</body>
+</html>

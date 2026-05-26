@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- RESPONSIVE -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description"
+          content="Conoce la historia y evolución de los Matsuri, los festivales tradicionales japoneses.">
+
+    <title>Historia | Matsuri Japón</title>
+
+    <link rel="stylesheet"
+          href="css/styles.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <h1 class="logo"
+        data-key="logo">
+
+        Matsuri Japón
+
+    </h1>
+
+    <!-- BOTONES DE IDIOMA -->
+    <div class="language-switch">
+
+        <button class="lang-btn active"
+                onclick="changeLanguage('es')">
+
+            ES
+
+        </button>
+
+        <button class="lang-btn"
+                onclick="changeLanguage('en')">
+
+            EN
+
+        </button>
+
+    </div>
+
+    <!-- BOTÓN MENÚ RESPONSIVE -->
+    <button class="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+        ☰
+
+    </button>
+
+    <!-- NAVEGACIÓN -->
+    <nav aria-label="Menú principal">
+
+        <ul class="nav">
+
+            <li>
+                <a href="index.html"
+                   data-key="inicio">
+
+                    Inicio
+
+                </a>
+            </li>
+
+            <li>
+                <a href="historia.html"
+                   aria-current="page"
+                   data-key="historia">
+
+                    Historia
+
+                </a>
+            </li>
+
+            <!-- MENÚ DESPLEGABLE -->
+            <li class="dropdown">
+
+                <button class="dropdown-btn"
+                        aria-expanded="false"
+                        data-key="tipos">
+
+                    Tipos de Matsuri
+
+                </button>
+
+                <ul class="submenu">
+
+                    <li>
+                        <a href="tipos.html#religiosos"
+                           data-key="religiosos">
+
+                            Religiosos
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tipos.html#estacionales"
+                           data-key="estacionales">
+
+                            Estacionales
+
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tipos.html#modernos"
+                           data-key="modernos">
+
+                            Modernos
+
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="galeria.html"
+                   data-key="galeria">
+
+                    Galería
+
+                </a>
+            </li>
+
+            <li>
+                <a href="calendario.html"
+                   data-key="calendario">
+
+                    Calendario
+
+                </a>
+            </li>
+
+            <li>
+                <a href="contacto.html"
+                   data-key="contacto">
+
+                    Contacto
+
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<!-- MENSAJE DINÁMICO -->
+<div id="mensaje-bienvenida"
+     class="mensaje"
+     aria-live="polite">
+</div>
+
+<!-- MAIN -->
+<main>
+
+    <!-- HERO -->
+    <section class="hero-galeria slider"
+             role="img"
+             aria-label="Historia de los festivales tradicionales japoneses">
+
+        <h2 data-key="historiaTitulo">
+
+            Historia de los Matsuri
+
+        </h2>
+
+        <p data-key="historiaDescripcion">
+
+            Descubre el origen y evolución de estas tradiciones japonesas
+
+        </p>
+
+        <!-- BOTONES SLIDER -->
+        <button class="prev"
+                aria-label="Imagen anterior">
+
+            ⟨
+
+        </button>
+
+        <button class="next"
+                aria-label="Imagen siguiente">
+
+            ⟩
+
+        </button>
+
+    </section>
+
+    <!-- ORIGEN -->
+    <section class="info">
+
+        <div class="text">
+
+            <h2 data-key="origenTitulo">
+
+                Origen religioso y cultural
+
+            </h2>
+
+            <p data-key="origenTexto1">
+
+                Los Matsuri tienen su origen en las antiguas prácticas religiosas
+                del sintoísmo, donde se rendía culto a los kami
+                (espíritus o deidades).
+
+            </p>
+
+            <p data-key="origenTexto2">
+
+                Con el tiempo evolucionaron incorporando elementos culturales,
+                artísticos y sociales que fortalecieron la identidad japonesa.
+
+            </p>
+
+        </div>
+
+        <div class="image"
+             role="img"
+             aria-label="Celebración tradicional Matsuri en Japón"
+             style="background-image: url('img/matsuri.jpg');">
+        </div>
+
+    </section>
+
+    <!-- LÍNEA DE TIEMPO -->
+    <section class="festivales"
+             aria-labelledby="linea-tiempo">
+
+        <h2 id="linea-tiempo"
+            data-key="lineaTiempo">
+
+            Línea de tiempo
+
+        </h2>
+
+        <div class="cards">
+
+            <!-- CARD 1 -->
+            <article class="card"
+                     tabindex="0">
+
+                <h3 data-key="antiguedadTitulo">
+
+                    Antigüedad
+
+                </h3>
+
+                <p data-key="antiguedadTexto">
+
+                    Los primeros Matsuri se celebraban como rituales religiosos
+                    en templos y santuarios japoneses.
+
+                </p>
+
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="card"
+                     tabindex="0">
+
+                <h3 data-key="edadMediaTitulo">
+
+                    Edad Media
+
+                </h3>
+
+                <p data-key="edadMediaTexto">
+
+                    Se integraron danzas, música y desfiles comunitarios,
+                    ampliando su impacto cultural y social.
+
+                </p>
+
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="card"
+                     tabindex="0">
+
+                <h3 data-key="actualidadTitulo">
+
+                    Actualidad
+
+                </h3>
+
+                <p data-key="actualidadTexto">
+
+                    Los Matsuri son festivales culturales reconocidos mundialmente
+                    y representan una importante tradición japonesa.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- QUÉ SON -->
+    <section class="info">
+
+        <div class="text">
+
+            <h2 data-key="queSonHistoria">
+
+                ¿Qué son los Matsuri?
+
+            </h2>
+
+            <p data-key="queSonHistoriaTexto1">
+
+                Son festivales tradicionales japoneses que combinan religión,
+                cultura y entretenimiento.
+
+            </p>
+
+            <p data-key="queSonHistoriaTexto2">
+
+                Incluyen desfiles, gastronomía, trajes típicos y espectáculos
+                tradicionales.
+
+            </p>
+
+        </div>
+
+        <div class="image"
+             role="img"
+             aria-label="Festival Gion Matsuri en Kioto"
+             style="background-image: url('img/gion.jpg');">
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer"
+        aria-label="Pie de página">
+
+    <div>
+
+        <h3 data-key="footerContacto">
+
+            Contacto
+
+        </h3>
+
+        <p>
+            Email: contacto@matsurijapon.com
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3 data-key="footerEnlaces">
+
+            Enlaces
+
+        </h3>
+
+        <p data-key="privacidad">
+
+            Política de privacidad
+
+        </p>
+
+    </div>
+
+    <div>
+
+        <h3 data-key="siguenos">
+
+            Síguenos
+
+        </h3>
+
+        <p data-key="redes">
+
+            Redes sociales
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- JAVASCRIPT -->
+<script src="js/script.js"></script>
+<script src="js/language.js"></script>
+
+</body>
+</html>
